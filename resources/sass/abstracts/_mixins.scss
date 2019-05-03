@@ -1,0 +1,123 @@
+// fix floated ob height collapse
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+// DIMENSIONAL
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin silver-screen-ratio {
+    width: 150rem; // silverscreen 21:9
+    height: 64.29rem;
+}
+
+@mixin golden-ratio {
+    width: 100rem; // 16:9
+    height: 56.25rem;
+}
+
+// EFFECTS
+@mixin gradientText {
+    @supports (-webkit-background-clip: text) or (background-clip: text) {
+        background-image: linear-gradient(
+            to right,
+            $color-primary-light,
+            $color-primary-dark
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+
+@mixin gradientTextWhite {
+    @supports (-webkit-background-clip: text) or (background-clip: text) {
+        background-image: linear-gradient(
+            to right,
+            $color-gray-light-1,
+            $color-gray-light-2
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+@mixin newspaperColumns {
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+// MEDIA QUERY MANAGER
+/* 0-600px           Phone
+600-900px         Tablet portrait
+900-1200px        tablet landscape
+[1200-1800px]     Desktop (normal styles)
+1800+             Big dektop
+
+breakpoint argument choices:
+  phone
+  tab-port
+  tab-land
+  big-desk
+
+
+1em = 16px
+
+
+ORDER: Base + Typography > General Layout + Grid > Page Layout > Components */
+@mixin respond($breakpoint) {
+    @if $breakpoint == slim-phone {
+        @media only screen and (max-width: 25em) {
+            // 400px
+            @content;
+        }
+    }
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) {
+            // 600px
+            @content;
+        }
+    }
+    @if $breakpoint == phat-phone {
+        @media only screen and (max-width: 43.75em) {
+            // 700px
+            @content;
+        }
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) {
+            // 900px
+            @content;
+        }
+    }
+    @if $breakpoint == phat-tab {
+        @media only screen and (max-width: 62.5em) {
+            // 1000px
+            @content;
+        }
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) {
+            // 1200px
+            @content;
+        }
+    }
+    @if $breakpoint == big-desk {
+        @media only screen and (min-width: 112.5em) {
+            // 1800px
+            @content;
+        }
+    }
+}

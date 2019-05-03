@@ -1,0 +1,73 @@
+[
+    {
+      "id":"1",
+      "question": "What is the output of the following code?",
+      "snippet": "var f = function() {<br />&nbsp;&nbsp;&nbsp;return function () {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(var cnt = 0; cnt < 10; ++cnt) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(console.log(cnt),1000);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;};<br />}();",
+      "answer": "d",
+      "choices": "[\"starting with 0 and ending with 9, cnt will be printed each second.\",\"starting with 0 and ending with 10 cnt will be printed each second\",\"9 printed ten times in a row 1 second apart.\",\"nothing will be printed.\",\"an error will be thrown\"]"
+    },
+    {
+        "id":"2",
+        "question": "Which of the following are NOT JavaScript Data types",
+        "snippet": "",
+        "answer": "c",
+        "choices": "[\"Undefined\",\"Symbol\",\"Decimal\",\"Null\",\"Object\"]"
+      },
+      {
+        "id":"3",
+        "question": "In JavaScript what is the result of dividing a negative number by zero?",
+        "snippet": "",
+        "answer": "c",
+        "choices": "[\"NaN\",\"Negative Zero\",\"Negative Infinity\",\"Undefined\",\"Null\"]"
+      },
+      {
+        "id":"4",
+        "question": "Where should you look at to determine what 'this' points to?",
+        "snippet": "",
+        "answer": "a",
+        "choices": "[\"The Call site\",\"The Definition\",\"The Parent\",\"The Child\",\"None of the above\"]"
+      },
+      {
+        "id":"5",
+        "question": "What is the value of x?",
+        "snippet": "var x = 3+2+\"7\";",
+        "answer": "b",
+        "choices": "[\"5\",\"57\",\"&#34;12&#34;\",\"12\",\"Undefined\"]"
+      },
+      {
+        "id":"6",
+        "question": "let and const are:",
+        "snippet": "",
+        "answer": "d",
+        "choices": "[\"ES6 keywords\",\"Variables\",\"Dynamically Scoped\",\"Block Scoped\",\"None of the Above\"]"
+      },
+      {
+        "id":"7",
+        "question": "What does the following code snippet accomplish?",
+        "snippet": "document.form[0].submit();",
+        "answer": "b",
+        "choices": "[\"Sends an Email\",\"Submits HTML Form\",\"Throws an Error\",\"Reloads Current Document\",\"None of the Above\"]"
+      },
+      {
+        "id":"8",
+        "question": "What does cloths.pop() do in the following snippet?",
+        "snippet": "var cloths = [\"Shirt\", \"Pant\", \"TShirt\"];<br />cloths.pop();",
+        "answer": "a",
+        "choices": "[\"Removes the Last Element in cloths\",\"Creates a New Array and Assigns it to cloths\",\"Reverses the cloths Array\",\"Removes the First Element in cloths\",\"None of the Above\"]"
+      },
+      {
+        "id":"9",
+        "question": "What does the following snippet do?",
+        "snippet": "var I = new object();",
+        "answer": "d",
+        "choices": "[\"Causes an Error\",\"Nothing. This is NOT Javascript\",\"Changes the Type of var I to object\",\"Creates a Generic object\",\"None of the Above\"]"
+      },
+      {
+        "id":"10",
+        "question": "Which of the following is an anonymous function?",
+        "snippet": "var a = function() { alert('I am anonymous');};<br />var b = (function fun() { alert('I am anonymous'); });<br />var c = anon => { };<br />var d = [];<br />var e = All of the above",
+        "answer": "a",
+        "choices": "[\"a\",\"b\",\"c\",\"d\",\"e\"]"
+      }
+  ]
+   

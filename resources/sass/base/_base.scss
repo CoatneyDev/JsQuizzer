@@ -1,0 +1,48 @@
+
+  
+:root {
+    --color-white: white;
+    --color-black: #323330;
+    --color-primary: #F0DB4F;
+    --color-bg-dark: #323330;
+    --color-gray-light-1: #eee;
+    --color-gray-light-2: #999;
+    --color-gray-dark-1: #777;
+    --default-font-size: 16;
+  }
+  
+  *,
+  *::after,
+  *::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+  }
+  
+  html {
+      // This defines what 1rem is
+      //font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  
+  }
+  
+  body {
+      box-sizing: border-box;
+      /* font-size: 16px; */
+      line-height: 1.7;
+      
+  }
+  
+  ::selection {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+  }
+
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
