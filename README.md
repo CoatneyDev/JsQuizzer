@@ -1,4 +1,4 @@
-# JS Quizzer
+# JS Quizzer [CODE](public/js/quiz.js)
 
 [DEMO](http://yosemitematt.com) - Working demo
 
